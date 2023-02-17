@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    background-color: black;
+    color:white;
+}
+.logoConnection{
+    height: 25px;
+    width: 25px;
+    margin-top: 30px;
+}
+h1 {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+p {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+body {
+    margin:0;
+    padding:0;
+}
+.end {
+    display: flex;
+    margin-left:auto;
+    width: 150px;
+}
+nav {
+    display: flex;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+li {
+    display:inline-block;
+}
+a {
+    display:block;
+    padding: 10px 20px;
+    width: 180px;
+    text-decoration: none;
+    background:white;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+a:hover {
+    font-weight:bolder;
+}
+li ul {
+    display: none;
+    position: absolute;
+}
+a.sm:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+li ul:hover{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
