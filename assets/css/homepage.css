@@ -6,7 +6,7 @@ header {
 .logoConnection{
     height: 25px;
     width: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 h1 {
     margin-left: 20px;
@@ -65,4 +65,25 @@ li ul:hover{
     display: flex;
     flex-direction: column;
     position: absolute;
+}
+.flecheDown {
+    width: 16px;
+    height: 8px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.banniere {
+    width: 100%;
+}
+.pub {
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(230,188,7) ;
+}
+.flexEven {
+    display: flex;
+    justify-content: space-evenly;
+}
+.visite {
+    font-size: x-large;
 }
