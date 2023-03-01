@@ -7,9 +7,9 @@
     <p>Abonnement</p>
     <p>Launcher</p>
     <p>Support</p>
-    <div class="end" href="index.php?page=1">
-        <img href="index.php?page=1" class="logoConnection" src="assets/images/login.png">
-        <p href="index.php?page=1">Se connecter</p>
+    <div class="end" href="index.php?page=connexion">
+        <img href="index.php?page=connexion" class="logoConnection" src="assets/images/login.png">
+        <a class="connect" href="index.php?page=connexion">Connexion</a>
     </div>
 </header>
 <nav>
@@ -17,10 +17,10 @@
         <li>
             <a class="sm">Jeux<img class="flecheDown" src="assets/images/down.png"></a>
             <ul>
-                <li><a href="">categorie 1</a></li>
-                <li><a href="">categorie 2</a></li>
-                <li><a href="">categorie 3</a></li>
-                <li><a href="">categorie 4</a></li>
+                <li><a class="fontHover" href="">categorie 1</a></li>
+                <li><a class="fontHover" href="">categorie 2</a></li>
+                <li><a class="fontHover" href="">categorie 3</a></li>
+                <li><a class="fontHover" href="">categorie 4</a></li>
             </ul>
         </li>
     </ul>
@@ -28,10 +28,10 @@
         <li>
             <a class="sm">DLC<img class="flecheDown" src="assets/images/down.png"></a>
             <ul>
-                <li><a href="">categorie 1</a></li>
-                <li><a href="">categorie 2</a></li>
-                <li><a href="">categorie 3</a></li>
-                <li><a href="">categorie 4</a></li>
+                <li><a class="fontHover" href="">categorie 1</a></li>
+                <li><a class="fontHover" href="">categorie 2</a></li>
+                <li><a class="fontHover" href="">categorie 3</a></li>
+                <li><a class="fontHover" href="">categorie 4</a></li>
             </ul>
         </li>
     </ul>

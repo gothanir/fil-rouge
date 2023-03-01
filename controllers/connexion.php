@@ -1,3 +1,3 @@
 <?php 
 require_once('model/model.php');
-require('templates/conection.php');
+require('templates/connexion.php');

@@ -24,6 +24,7 @@ body {
     display: flex;
     margin-left:auto;
     width: 150px;
+    margin-right: 20px;
 }
 nav {
     display: flex;
@@ -49,7 +50,7 @@ a {
     text-transform: uppercase;
     text-align: center;
 }
-a:hover {
+.fontHover :hover {
     font-weight:bolder;
 }
 li ul {
@@ -86,4 +87,39 @@ li ul:hover{
 }
 .visite {
     font-size: x-large;
+}
+.connect {
+    background-color: black;
+    color: white;
+    padding-top: 23px;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.littleBody {
+    width: 500px;
+    border: solid 1px;
+    margin: auto;
+    margin-top: 150px;
+}
+.right {
+    margin-left: auto;
+    margin-top: 18px;
+}
+.connexionForm {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.connexionInput {
+    border: none;
+    border-bottom: 2px solid rgb(103,103,103);
+    margin: 20px 5px 10px 5px;
+}
+.connexionButton {
+    margin: 20px 5px 10px 5px;
+    background: rgb(0, 110, 245);
+    color: white;
+    border: none;
 }
