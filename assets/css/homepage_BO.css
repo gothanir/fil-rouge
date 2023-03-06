@@ -1,0 +1,125 @@
+header {
+    display: flex;
+    background-color: black;
+    color:white;
+}
+.logoConnection{
+    height: 25px;
+    width: 25px;
+    margin-top: 25px;
+}
+h1 {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+p {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+body {
+    margin:0;
+    padding:0;
+}
+.end {
+    display: flex;
+    margin-left:auto;
+    width: 150px;
+    margin-right: 20px;
+}
+nav {
+    display: flex;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+li {
+    display:inline-block;
+}
+a {
+    display:block;
+    padding: 10px 20px;
+    width: 180px;
+    text-decoration: none;
+    background:white;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+.fontHover :hover {
+    font-weight:bolder;
+}
+li ul {
+    display: none;
+    position: absolute;
+}
+a.sm:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+li ul:hover{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.flecheDown {
+    width: 16px;
+    height: 8px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.banniere {
+    width: 100%;
+}
+.pub {
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(230,188,7) ;
+}
+.flexEven {
+    display: flex;
+    justify-content: space-evenly;
+}
+.visite {
+    font-size: x-large;
+}
+.connect {
+    background-color: black;
+    color: white;
+    padding-top: 23px;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.littleBody {
+    width: 500px;
+    border: solid 1px;
+    margin: auto;
+    margin-top: 150px;
+}
+.right {
+    margin-left: auto;
+    margin-top: 18px;
+}
+.connexionForm {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.connexionInput {
+    border: none;
+    border-bottom: 2px solid rgb(103,103,103);
+    margin: 20px 5px 10px 5px;
+}
+.connexionButton {
+    margin: 20px 5px 10px 5px;
+    background: rgb(0, 110, 245);
+    color: white;
+    border: none;
+}

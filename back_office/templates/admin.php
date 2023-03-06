@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <header>
-    <p href="index.php">Gestion categorie</p>
+    <p href="index.php?page=cat">Gestion categorie</p>
     <p>Gestion produit</p>
 </header>
 

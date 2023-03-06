@@ -4,8 +4,7 @@
 
 <div class="littleBody">
     <div class="flex">
-        <p>Connexion</p>
-        <a class="right" href="index.php?page=try_connect">Creer un compte</a>
+        <p>Connexion au back office</p>
     </div>
     <form action="" class="connexionForm">
         <input class="connexionInput" type="mail" name="mail" placeholder="Adresse e-mail"></input>
@@ -14,5 +13,7 @@
     </form>
 </div>
 
-<?php $content = ob_get_clean(); ?>
-<?php require('layout.php') ?>
+<?php 
+    $content = ob_get_clean(); 
+    require('layout.php');
+?>
