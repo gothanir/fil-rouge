@@ -1,17 +1,22 @@
 <?php
-
 session_start();
 require_once('../../model/db_connect.php');
 
-if(isset($_GET['page'])) {
-    $page = strval($_GET['page']);
-    if ($page == 'cat' ) {
-        require_once('../controllers/admin.php');
+if(isset($_SESSION['email'])) {
+    if(isset($_GET['page'])) {
+        $page = strval($_GET['page']);
+        if ($page == 'cat' ) {
+            require_once('../controllers/categorieSelect.php');
+        } elseif ($page == 'signout' ) {
+            session_destroy();
+            require_once('../controllers/connexion_admin.php');            
+        } 
+        else {
+            require_once('../controllers/homepageBO.php');
+        }
     } else {
-        require_once('../controllers/connexion_admin.php');
+        require_once('../controllers/homepageBO.php');
     }
 } else {
     require_once('../controllers/connexion_admin.php');
 }
-
-

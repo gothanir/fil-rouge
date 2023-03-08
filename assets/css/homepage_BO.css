@@ -26,37 +26,11 @@ body {
     width: 150px;
     margin-right: 20px;
 }
-nav {
-    display: flex;
-}
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display:flex;
-    justify-content: center;
-    position: relative;
-}
-li {
-    display:inline-block;
-}
-a {
-    display:block;
-    padding: 10px 20px;
-    width: 180px;
-    text-decoration: none;
-    background:white;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-}
+
 .fontHover :hover {
     font-weight:bolder;
 }
-li ul {
-    display: none;
-    position: absolute;
-}
+
 a.sm:hover + ul {
     display: flex;
     flex-direction: column;
