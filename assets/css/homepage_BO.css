@@ -97,3 +97,49 @@ li ul:hover{
     color: white;
     border: none;
 }
+.add {
+    border: solid 1px black;
+    width: 200px;
+    text-align: center;
+    margin: 40px 10px 200px 50px;
+    padding: 0 12px ;
+    font-size: larger;
+    font-weight: 500;
+    background-color: rgb(0, 110, 245);
+    text-decoration: none;
+    color:white;
+}
+.modif {
+    background-color: yellow;
+}
+.suppr {
+    background-color: red;
+    color : white;
+}
+.addForm {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+}
+.addInput {
+    border: none;
+    border-bottom: 2px solid rgb(103,103,103);
+    margin: 20px 5px 10px 5px;
+}
+.addButton {
+    margin: 20px 5px 10px 5px;
+    background: rgb(0, 110, 245);
+    width: 200px;
+    color: white;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+}
+.error {
+    text-align: center;
+    color: red;
+    font-weight: 500;
+    font-size: larger;
+}

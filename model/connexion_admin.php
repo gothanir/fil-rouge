@@ -17,12 +17,12 @@ if (isset($_POST["submit"])) {
                 header('Location: index.php');
                 echo 'bienvenue';
             } else {
-                echo "email et/ou mot de passe incorecte.";
+                echo '<div class="error">erreur : email et/ou mot de passe incorecte.</div>';
             } 
         } else {
-                echo "email et/ou mot de passe incorecte.";
+                echo '<div class="error">erreur : email et/ou mot de passe incorecte.</div>';
             }
     } else {
-        echo "veuiller remplir tout les champs.";
+        echo '<div class="error">erreur : veuiller remplir tout les champs.</div>';
     }
 }

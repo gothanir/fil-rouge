@@ -11,7 +11,9 @@ if(isset($_SESSION['email'])) {
             session_destroy();
             require_once('../controllers/connexion_admin.php');            
         } 
-        else {
+        elseif ($page == "addCat") {
+            require_once('../controllers/categorieAdd.php');
+        } else {
             require_once('../controllers/homepageBO.php');
         }
     } else {
