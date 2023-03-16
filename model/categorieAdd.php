@@ -1,11 +1,16 @@
 <?php 
 
-if (isset($POST["submit"])) {
-    if ( isset($POST["nom"] ) || !empty($POST["nom"])) {
-    $sqlQuery = 'INSERT INTO categories (name) VALUES (:name)';
+if (isset($_POST["submit"])) {
+    if ( isset($_POST["name"] ) || !empty($_POST["name"])) {
+        $query = 'INSERT INTO categories (name) VALUES (:name)';
+        $req = $db->prepare($query);
+        $nom = htmlspecialchars($_POST["name"]);
+        $req->bindValue(':name', $nom, PDO::PARAM_STR);
+        $req->execute();
+        if($req) {
+            echo '<div class="error text-success">erreur : veuiller remplir tout les champs.</div>';
+        }
     } else {
         echo '<div class="error">erreur : veuiller remplir tout les champs.</div>';
     }
 }
-var_dump($POST["submit"]);
-var_dump($POST["name"]);

@@ -10,9 +10,10 @@ if(isset($_SESSION['email'])) {
         } elseif ($page == 'signout' ) {
             session_destroy();
             require_once('../controllers/connexion_admin.php');            
-        } 
-        elseif ($page == "addCat") {
+        } elseif ($page == "addCat") {
             require_once('../controllers/categorieAdd.php');
+        } elseif ($page == "modifCat") {
+            require_once('../controllers/categorieModif.php');
         } else {
             require_once('../controllers/homepageBO.php');
         }

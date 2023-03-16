@@ -111,10 +111,21 @@ li ul:hover{
 }
 .modif {
     background-color: yellow;
+    text-decoration: none;
+    margin: 10px;
+    border: solid 1px;
+    color:black;
+    font-size: larger;
+    font-weight: 500;
 }
 .suppr {
     background-color: red;
-    color : white;
+    color : black;
+    text-decoration: none;
+    margin:10px;
+    border: solid 1px;
+    font-size: larger;
+    font-weight: 500;
 }
 .addForm {
     display: flex;
@@ -142,4 +153,16 @@ li ul:hover{
     color: red;
     font-weight: 500;
     font-size: larger;
+}
+.tableCat {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+.divTableCat {
+    display: flex;
+    justify-content: center;
+}
+.borderTD {
+    border: solid 2px black;
 }
