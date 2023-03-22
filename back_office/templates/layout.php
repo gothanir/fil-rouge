@@ -30,6 +30,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="index.php?page=cat">Categorie</a></li>
+							<li><a class="dropdown-item" href="index.php?page=subCat">Sous-Categorie</a></li>
 							<li><a class="dropdown-item" href="#">Another action</a></li>
 						</ul>
 					</li>
