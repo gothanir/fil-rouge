@@ -9,9 +9,10 @@
         foreach ( $subCategories as $subCategorie) {
             ?>
             <tr>
-                <td class="borderTD" ><div><?php echo $categorie["name"] ?></div></td>
-                <td class="borderTD" ><a class="modif" href="index.php?page=subModifCat&idCategorie=<?php echo $categorie['id']?>" >MODIFIER</a></td>
-                <td class="borderTD" ><a class="suppr" href="index.php?page=subCat&idCategorieSuppr=<?php echo $categorie['id']?>" >SUPPRIMER</a></td>
+                <td class="borderTD" ><div><?php echo $subCategorie["name"] ?></div></td>
+                <td class="borderTD" ><div><?php categorieName($subCategorie['id_categorie'],$db) ?></div></td>
+                <td class="borderTD" ><a class="modif" href="index.php?page=subModifCat&idCategorie=<?php echo $subCategorie['id']?>" >MODIFIER</a></td>
+                <td class="borderTD" ><a class="suppr" href="index.php?page=subCat&idCategorieSuppr=<?php echo $subCategorie['id']?>" >SUPPRIMER</a></td>
             </tr>
             <?php
         }

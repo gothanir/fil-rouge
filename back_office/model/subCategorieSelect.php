@@ -1,6 +1,6 @@
 <?php 
 
 $sqlQuery = 'SELECT * FROM sous_categories' ;
-$categoriesStatement = $db->prepare($sqlQuery);
-$categoriesStatement->execute();
-$categories = $categoriesStatement->fetchAll();
+$subCategoriesStatement = $db->prepare($sqlQuery);
+$subCategoriesStatement->execute();
+$subCategories = $subCategoriesStatement->fetchAll();
