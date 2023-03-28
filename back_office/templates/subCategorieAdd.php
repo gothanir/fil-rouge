@@ -1,7 +1,7 @@
 <?php $title = "admin"; ?>
 
 <?php ob_start(); ?>
-<a class="add" href="index.php?page=subCat">retourner a la gestion des sous-categorie</a>
+<a class="add" href="index.php?page=picture">retourner a la gestion des sous-categorie</a>
 <form method="POST" class="addForm">
     <select name="id">
         <option value="none">choisir une categorie</option>

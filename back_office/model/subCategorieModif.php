@@ -1,8 +1,8 @@
 <?php 
 $msg='';
 if (isset($_POST["submit"])) {
-    if ( isset($_POST["name"] ) && !empty($_POST["name"])) {
-        $query = 'UPDATE categories SET name = :name WHERE id = :id';
+    if ( isset($_POST["name"] ) || !empty($_POST["name"])) {
+        $query = 'UPDATE sous_categories SET name = :name WHERE id = :id';
         $req = $db->prepare($query);
         $nom = htmlspecialchars($_POST["name"]);
         $req->bindValue(':name', $nom, PDO::PARAM_STR);
@@ -11,10 +11,10 @@ if (isset($_POST["submit"])) {
         if($req) {
             
             $msg= '<div class="error text-success">les nom de la categorie a etait modifier avec succées.</div>';
-            header('Refresh:2 ; URL=index.php?page=cat');
+            header('Refresh:2 ; URL=index.php?page=subCat');
 
         }
     } else {
-        $msg= '<div class="errorRed">erreur : veuiller remplir tout les champs.</div>';
+        $msg= '<div class="error">erreur : veuiller remplir tout les champs.</div>';
     }
 }

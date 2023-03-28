@@ -148,9 +148,14 @@ li ul:hover{
     margin: auto;
     margin-top: 20px;
 }
-.error {
+.errorRed {
     text-align: center;
     color: red;
+    font-weight: 500;
+    font-size: larger;
+}
+.error {
+    text-align: center;
     font-weight: 500;
     font-size: larger;
 }

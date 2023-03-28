@@ -12,7 +12,7 @@
                 <td class="borderTD" ><div><?php echo $categorie["name"] ?></div></td>
                 <td class="borderTD" ><a class="modif" href="index.php?page=modifCat&idCategorie=<?php echo $categorie['id']?>" >MODIFIER</a></td>
                 <td class="borderTD" ><a class="suppr" href="index.php?page=cat&idCategorieSuppr=<?php echo $categorie['id']?>"
-                 onclick='return(confirm("Voulez-vous supprimer cet utilisateur ?"))' >SUPPRIMER</a></td>
+                 onclick='return(confirm("Voulez-vous supprimer cet categorie ?"))' >SUPPRIMER</a></td>
             </tr>
             <?php
         }
