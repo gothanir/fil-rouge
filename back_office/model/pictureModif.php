@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
         if($req) {
             
             $msg= '<div class="error text-success">les nom de la categorie a etait modifier avec succées.</div>';
-            header('Refresh:2 ; URL=index.php?page=subCat');
+            header('Refresh:2 ; URL=index.php?page=picture');
 
         }
     } else {

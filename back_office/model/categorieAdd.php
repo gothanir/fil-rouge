@@ -1,7 +1,7 @@
 <?php 
 
 if (isset($_POST["submit"])) {
-    if ( isset($_POST["name"] ) || !empty($_POST["name"])) {
+    if ( isset($_POST["name"] ) && !empty($_POST["name"])) {
         $query = 'INSERT INTO categories (name) VALUES (:name)';
         $req = $db->prepare($query);
         $nom = htmlspecialchars($_POST["name"]);

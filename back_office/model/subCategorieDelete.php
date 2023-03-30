@@ -6,5 +6,5 @@ if(isset($_GET["idCategorieSuppr"])) {
     $categorieStatement = $db->prepare($query);
     $categorieStatement->bindValue(':id', $id, PDO::PARAM_STR);
     $categorieStatement->execute();
-    header('Location: index.php?page=cat');
+    header('Location: index.php?page=subCat');
 }
