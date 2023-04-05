@@ -10,9 +10,9 @@ if (isset($_POST["submit"])) {
         $req->bindValue(':id_cat', $id, PDO::PARAM_STR);
         $req->execute();
         if($req) {
-            echo '<div class="error text-success">erreur : veuiller remplir tout les champs.</div>';
+            $msg= '<div class="error text-success">erreur : veuiller remplir tout les champs.</div>';
         }
     } else {
-        echo '<div class="error">erreur : veuiller remplir tout les champs.</div>';
+        $msg= '<div class="error">erreur : veuiller remplir tout les champs.</div>';
     }
 }

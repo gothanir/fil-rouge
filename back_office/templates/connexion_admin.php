@@ -12,7 +12,6 @@
         <button class="connexionButton" type="submit" name="submit">CONNEXION</button>
     </form>
 </div>
-
 <?php 
     $content = ob_get_clean(); 
     require('layout.php');
