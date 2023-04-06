@@ -30,6 +30,14 @@ if(isset($_SESSION['email'])) {
         } elseif ($page == "modifPicture") {
             require_once('../controllers/pictureModif.php');
 
+        // gestion produit
+        } elseif ($page == 'product' ) {
+            require_once('../controllers/productSelect.php');
+        } elseif ($page == "productAdd") {
+            require_once('../controllers/productAdd.php');
+        } elseif ($page == "modifProduct") {
+            require_once('../controllers/productModif.php');
+
         // deconexion
         } elseif ($page == 'signout' ) {
             session_destroy();

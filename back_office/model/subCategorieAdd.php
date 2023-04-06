@@ -1,5 +1,5 @@
 <?php 
-
+$msg="";
 if (isset($_POST["submit"])) {
     if ( isset($_POST["name"] ) && !empty($_POST["name"]) && $_POST["id"] != "none" ) {
         $query = 'INSERT INTO sous_categories (name,id_categorie) VALUES (:name,:id_cat)';

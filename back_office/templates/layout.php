@@ -29,9 +29,10 @@
 							naviguer
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="index.php?page=cat">Categorie</a></li>
-							<li><a class="dropdown-item" href="index.php?page=subCat">Sous-Categorie</a></li>
+							<li><a class="dropdown-item" href="index.php?page=cat">Categories</a></li>
+							<li><a class="dropdown-item" href="index.php?page=subCat">Sous-Categories</a></li>
 							<li><a class="dropdown-item" href="index.php?page=picture">Images</a></li>
+							<li><a class="dropdown-item" href="index.php?page=product">Produits</a></li>
 						</ul>
 					</li>
 				</ul>
