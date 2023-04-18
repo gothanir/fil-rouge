@@ -12,7 +12,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary ">
 		<div class="container-fluid bg-dark">
-			<a class="navbar-brand text-light" href="">Fil-rouge</a>
+			<a class="navbar-brand text-light" href="index.php?page=homepageBO">Fil-rouge</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -33,6 +33,7 @@
 							<li><a class="dropdown-item" href="index.php?page=subCat">Sous-Categories</a></li>
 							<li><a class="dropdown-item" href="index.php?page=picture">Images</a></li>
 							<li><a class="dropdown-item" href="index.php?page=product">Produits</a></li>
+							<li><a class="dropdown-item" href="index.php?page=plateforme">Plateforme</a></li>
 						</ul>
 					</li>
 				</ul>

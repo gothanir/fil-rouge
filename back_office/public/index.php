@@ -38,6 +38,15 @@ if(isset($_SESSION['email'])) {
         } elseif ($page == "modifProduct") {
             require_once('../controllers/productModif.php');
 
+        // gestion plateforme
+        } elseif ($page == 'plateforme' ) {
+            require_once('../controllers/plateformeSelect.php');
+        } elseif ($page == "addPlateforme") {
+            require_once('../controllers/plateformeAdd.php');
+        } elseif ($page == "modifPlateforme") {
+            require_once('../controllers/plateformeModif.php');
+
+
         // deconexion
         } elseif ($page == 'signout' ) {
             session_destroy();

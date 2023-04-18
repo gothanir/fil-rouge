@@ -29,13 +29,13 @@ if (isset($_POST["submit"])) {
                     $req->execute();
 
                 } else {
-                    $msg= "<div class='errorRed'>erreur :l\'extension n'est pas accepter !";
+                    $msg= "<div class='error'>erreur :l\'extension n'est pas accepter !";
                 }
             } else {
-                $msg= '<div class="errorRed">erreur : le fichier est trop lourd.</div>';
+                $msg= '<div class="error">erreur : le fichier est trop lourd.</div>';
             }
         } else {
-            $msg= '<div class="errorRed">erreur : veuiller remplir tout les champs.</div>';
+            $msg= '<div class="error">erreur : veuiller remplir tout les champs.</div>';
         }
     }
 }

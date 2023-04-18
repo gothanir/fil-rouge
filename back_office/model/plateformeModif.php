@@ -2,7 +2,7 @@
 $msg='';
 if (isset($_POST["submit"])) {
     if ( isset($_POST["name"] ) && !empty($_POST["name"])) {
-        $query = 'UPDATE categories SET name = :name WHERE id = :id';
+        $query = 'UPDATE plateformes SET name = :name WHERE id = :id';
         $req = $db->prepare($query);
         $nom = htmlspecialchars($_POST["name"]);
         $req->bindValue(':name', $nom, PDO::PARAM_STR);
@@ -10,8 +10,8 @@ if (isset($_POST["submit"])) {
         $req->execute();
         if($req) {
             
-            $msg= '<div class="success text-success">les nom de la categorie a etait modifier avec succées.</div>';
-            header('Refresh:2 ; URL=index.php?page=cat');
+            $msg= '<div class="success text-success">les nom de la plateforme a etait modifier avec succées.</div>';
+            header('Refresh:2 ; URL=index.php?page=plateforme');
 
         }
     } else {

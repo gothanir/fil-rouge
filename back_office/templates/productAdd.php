@@ -18,7 +18,7 @@
         ?>
     </select>
 
-    <select class="addInput"  name="idSubCat">
+    <select class="addInput" id="cat"  name="idSubCat">
         <option value="none">choisir une sous-categorie</option>
         <?php
         foreach ( $subCategories as $subCategorie) {
@@ -28,6 +28,16 @@
         }
         ?>
     </select>
+
+    <?php
+    foreach ( $plateformes as $plateforme) {
+        ?>
+        
+        <?php echo $plateforme["name"] ?><input type="checkbox" name="idSubCat" value="<?php echo $plateforme["id"] ?>">
+        
+        <?php
+        }
+        ?>
     
     <button class="addButton" type="submit" name="submit" >Ajouter le produits</button>
     <input class="hidden" type="text" name="ident_product" value="<?php echo time(); ?>"></input>
@@ -38,3 +48,34 @@
 $content = ob_get_clean();
 require('layout.php') ;
 ?>
+
+<script>
+    window.addEventListener('load', () => {
+        const cat = document.getElementById('cat');
+        const sc = document.getElementById('sc');
+        cat.addEventListener('change', ()  => {
+            sc.disabled = true;
+            $.get('subCategorieSelect.php', {
+                identCat: cat.value
+            }).done((data) => {
+                sc.innerHTML = '';
+                JSON.parse(data).forEach((e) => {
+                    let subcat = document.createElement('OPTION');
+                    subcat.value = e.ident_sous_cat;
+                    let txt = document.createTextNode(e.sous_categorie);
+                    subcat.appendChild(txt);
+                    sc.appendChild(subcat);
+                });
+                if (cat.value == 'Sélectionnez la catégorie') {
+                        sc.disabled = true;
+                        let opt = document.createElement('OPTION');
+                        opt.innerHTML = 'Sélectionnez la sous-catégorie';
+                        sc.appendChild(opt);
+                    } else {
+                        sc.disabled = false;
+                    }
+                
+            });
+        });
+    });
+</script>

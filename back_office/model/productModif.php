@@ -12,11 +12,11 @@ if (isset($_POST["submit"])) {
         $req->execute();
         if($req) {
             
-            $msg= '<div class="error text-success">l\'image a etait modifier avec succées.</div>';
+            $msg= '<div class="success text-success">l\'image a etait modifier avec succées.</div>';
             header('Refresh:2 ; URL=index.php?page=product');
 
         }
     } else {
-        $msg= '<div class="errorRed">erreur : veuiller remplir tout les champs.</div>';
+        $msg= '<div class="error">erreur : veuiller remplir tout les champs.</div>';
     }
 }

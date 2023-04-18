@@ -1,5 +1,5 @@
 <?php 
-$msg="";
+$msg ="";
 if (isset($_POST["submit"])) {
     if ( isset($_POST["name"] ) && !empty($_POST["name"]) && $_POST["id"] != "none" ) {
         $query = 'INSERT INTO sous_categories (name,id_categorie) VALUES (:name,:id_cat)';
@@ -10,9 +10,9 @@ if (isset($_POST["submit"])) {
         $req->bindValue(':id_cat', $id, PDO::PARAM_STR);
         $req->execute();
         if($req) {
-            $msg= '<div class="error text-success">erreur : veuiller remplir tout les champs.</div>';
+            $msg = '<div class="success text-success">La categorie a bien etait ajouter.</div>';
         }
     } else {
-        $msg= '<div class="error">erreur : veuiller remplir tout les champs.</div>';
+        $msg = '<div class="error">erreur : veuiller remplir tout les champs.</div>';
     }
 }
