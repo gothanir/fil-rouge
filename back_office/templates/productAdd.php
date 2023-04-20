@@ -20,13 +20,6 @@
 
     <select class="addInput" id="sc"  name="idSubCat">
         <option value="none">choisir une sous-categorie</option>
-        <?php
-        foreach ( $subCategories as $subCategorie) {
-            ?>
-            <option value="<?php echo $subCategorie["id"] ?>"><?php echo $subCategorie["name"] ?></option>";
-            <?php
-        }
-        ?>
     </select>
 
     <?php
