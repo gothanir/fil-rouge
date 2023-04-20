@@ -7,7 +7,7 @@
     <input class="addInput" type="text" name="description" placeholder="description"></input>
     <input class="addInput" type="number" name="price" placeholder="prix du produit"></input>
 
-    <select class="addInput"  name="idCat">
+    <select class="addInput" id="cat"  name="idCat">
         <option value="none">choisir une categorie</option>
         <?php
         foreach ( $categories as $categorie) {
@@ -18,7 +18,7 @@
         ?>
     </select>
 
-    <select class="addInput" id="cat"  name="idSubCat">
+    <select class="addInput" id="sc"  name="idSubCat">
         <option value="none">choisir une sous-categorie</option>
         <?php
         foreach ( $subCategories as $subCategorie) {
@@ -33,7 +33,7 @@
     foreach ( $plateformes as $plateforme) {
         ?>
         
-        <?php echo $plateforme["name"] ?><input type="checkbox" name="idSubCat" value="<?php echo $plateforme["id"] ?>">
+        <?php echo $plateforme["name"] ?><input type="checkbox" name="idOption" value="<?php echo $plateforme["id"] ?>">
         
         <?php
         }
@@ -43,19 +43,13 @@
     <input class="hidden" type="text" name="ident_product" value="<?php echo time(); ?>"></input>
 </form>
 
-<?=$msg?>
-<?php
-$content = ob_get_clean();
-require('layout.php') ;
-?>
-
 <script>
     window.addEventListener('load', () => {
         const cat = document.getElementById('cat');
         const sc = document.getElementById('sc');
         cat.addEventListener('change', ()  => {
             sc.disabled = true;
-            $.get('subCategorieSelect.php', {
+            $.get('../model/subCatToProduct.php', {
                 identCat: cat.value
             }).done((data) => {
                 sc.innerHTML = '';
@@ -79,3 +73,10 @@ require('layout.php') ;
         });
     });
 </script>
+
+
+<?=$msg?>
+<?php
+$content = ob_get_clean();
+require('layout.php') ;
+?>

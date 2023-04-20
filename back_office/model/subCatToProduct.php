@@ -1,6 +1,6 @@
 <?php
 
-require '../config.php';
+require('../model/categorieSelect.php');
 
 if(isset($_GET['identCat'])) {
     $categorie = intval($_GET['identCat']);
