@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
 
         ) {
 
-            $query = 'INSERT INTO pictures (name,description) VALUES (:name,:description)';
+            $query = 'INSERT INTO products (name,description,price,idCat,idSubCat) VALUES (:name,:description,:price,:idCat,:idSubCat)';
             $req = $db->prepare($query);
 
             $name = htmlspecialchars($_POST["name"]);
