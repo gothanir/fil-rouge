@@ -46,17 +46,18 @@
                 identCat: cat.value
             }).done((data) => {
                 sc.innerHTML = '';
+                console.log(data);
                 JSON.parse(data).forEach((e) => {
                     let subcat = document.createElement('OPTION');
-                    subcat.value = e.ident_sous_cat;
-                    let txt = document.createTextNode(e.sous_categorie);
+                    subcat.value = e.id;
+                    let txt = document.createTextNode(e.name);
                     subcat.appendChild(txt);
                     sc.appendChild(subcat);
                 });
-                if (cat.value == 'Sélectionnez la catégorie') {
+                if (cat.value == 'none') {
                         sc.disabled = true;
                         let opt = document.createElement('OPTION');
-                        opt.innerHTML = 'Sélectionnez la sous-catégorie';
+                        opt.innerHTML = 'choisir une sous-categorie';
                         sc.appendChild(opt);
                     } else {
                         sc.disabled = false;
